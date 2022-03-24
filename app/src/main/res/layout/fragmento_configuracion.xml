@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/color_fondo"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10sp"
+        android:background="@drawable/color_de_los_fragmentos"
+        tools:layout_editor_absoluteX="-98sp"
+        tools:layout_editor_absoluteY="16sp">
+
+
+        <TextView
+            android:id="@+id/mostrar_Admins"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/txt_config_click"
+            android:onClick="met_mostrar_admins"
+            android:paddingTop="10sp"
+            android:text="Mostrar Administradores"
+            android:textAlignment="center"
+            android:textColor="@color/color_flotante"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/mostrar_todos_usuarios"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/txt_config_click"
+            android:onClick="met_mostrar_usuarios"
+            android:paddingTop="10sp"
+            android:text="Mostrar todos los Usuarios"
+            android:textAlignment="center"
+            android:textColor="@color/color_flotante"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrar_Admins" />
+
+        <TextView
+            android:id="@+id/mostrar_MAC"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/txt_config_click"
+            android:onClick="met_mostrar_MAC"
+            android:paddingTop="10sp"
+            android:text="MAC Registradas"
+            android:textAlignment="center"
+            android:textColor="@color/color_flotante"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrar_todos_usuarios" />
+
+        <TextView
+            android:id="@+id/exportar_marcaje"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/txt_config_click"
+            android:onClick="met_mostrar_exportarDatos"
+            android:paddingTop="10sp"
+            android:text="Exportar Datos"
+            android:textAlignment="center"
+            android:textColor="@color/color_flotante"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mostrar_MAC" />
+
+        <TextView
+            android:id="@+id/noadmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/color_redconectado"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/exportar_marcaje"
+            app:layout_constraintVertical_bias="0.475" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

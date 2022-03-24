@@ -1,0 +1,4 @@
+include ':mylibrary-extension-rx'
+include ':mylibrary'
+include ':app'
+rootProject.name = "Admin Assist Control"
